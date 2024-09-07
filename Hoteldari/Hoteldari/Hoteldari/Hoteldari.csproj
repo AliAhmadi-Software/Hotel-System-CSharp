@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{342992D6-BD28-482F-A80F-6375767C7DC3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Hoteldari</RootNamespace>
+    <AssemblyName>Hoteldari</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2, Version=12.7.0.2, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\DotNetBar for Windows Forms\DevComponents.DotNetBar2.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Stimulsoft.Base, Version=2010.1.700.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\StimulSoftDLL\Stimulsoft.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Controls, Version=2010.1.700.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\StimulSoftDLL\Stimulsoft.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Controls.Win, Version=2010.1.700.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\StimulSoftDLL\Stimulsoft.Controls.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report, Version=2010.1.700.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\StimulSoftDLL\Stimulsoft.Report.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Check, Version=2010.1.700.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\StimulSoftDLL\Stimulsoft.Report.Check.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Design, Version=2010.1.700.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\StimulSoftDLL\Stimulsoft.Report.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VistaClockPersian, Version=1.2.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\VistaClockPersian.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataBase.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChekD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChekD.Designer.cs">
+      <DependentUpon>frmChekD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChekP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChekP.Designer.cs">
+      <DependentUpon>frmChekP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGroup.Designer.cs">
+      <DependentUpon>frmGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHazineh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHazineh.Designer.cs">
+      <DependentUpon>frmHazineh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHesab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHesab.Designer.cs">
+      <DependentUpon>frmHesab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInfo.Designer.cs">
+      <DependentUpon>frmInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKarbar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKarbar.Designer.cs">
+      <DependentUpon>frmKarbar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListChekD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListChekD.Designer.cs">
+      <DependentUpon>frmListChekD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListChekP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListChekP.Designer.cs">
+      <DependentUpon>frmListChekP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListHazineh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListHazineh.Designer.cs">
+      <DependentUpon>frmListHazineh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListHesab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListHesab.Designer.cs">
+      <DependentUpon>frmListHesab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListMenu.Designer.cs">
+      <DependentUpon>frmListMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListOtag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListOtag.Designer.cs">
+      <DependentUpon>frmListOtag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmlistPaziresh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmlistPaziresh.Designer.cs">
+      <DependentUpon>frmlistPaziresh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListService.Designer.cs">
+      <DependentUpon>frmListService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoading.Designer.cs">
+      <DependentUpon>frmLoading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu.Designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOtag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOtag.Designer.cs">
+      <DependentUpon>frmOtag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPardakht.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPardakht.Designer.cs">
+      <DependentUpon>frmPardakht.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPaziresh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPaziresh.Designer.cs">
+      <DependentUpon>frmPaziresh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmService.Designer.cs">
+      <DependentUpon>frmService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTax.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTax.Designer.cs">
+      <DependentUpon>frmTax.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVariz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVariz.Designer.cs">
+      <DependentUpon>frmVariz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChekD.resx">
+      <DependentUpon>frmChekD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChekP.resx">
+      <DependentUpon>frmChekP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGroup.resx">
+      <DependentUpon>frmGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHazineh.resx">
+      <DependentUpon>frmHazineh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHesab.resx">
+      <DependentUpon>frmHesab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInfo.resx">
+      <DependentUpon>frmInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKarbar.resx">
+      <DependentUpon>frmKarbar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListChekD.resx">
+      <DependentUpon>frmListChekD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListChekP.resx">
+      <DependentUpon>frmListChekP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListHazineh.resx">
+      <DependentUpon>frmListHazineh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListHesab.resx">
+      <DependentUpon>frmListHesab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListMenu.resx">
+      <DependentUpon>frmListMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListOtag.resx">
+      <DependentUpon>frmListOtag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmlistPaziresh.resx">
+      <DependentUpon>frmlistPaziresh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListService.resx">
+      <DependentUpon>frmListService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoading.resx">
+      <DependentUpon>frmLoading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOtag.resx">
+      <DependentUpon>frmOtag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPardakht.resx">
+      <DependentUpon>frmPardakht.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPaziresh.resx">
+      <DependentUpon>frmPaziresh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmService.resx">
+      <DependentUpon>frmService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTax.resx">
+      <DependentUpon>frmTax.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVariz.resx">
+      <DependentUpon>frmVariz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

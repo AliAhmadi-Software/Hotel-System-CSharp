@@ -1,0 +1,505 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.0" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="1">
+      <Connection Ref="2" type="Stimulsoft.Report.Dictionary.StiSqlDatabase" isKey="true">
+        <Alias>Connection</Alias>
+        <ConnectionString>Data Source=.;Integrated Security=True;Initial Catalog=Hoteldari</ConnectionString>
+        <Name>Connection</Name>
+        <PromptUserNameAndPassword>False</PromptUserNameAndPassword>
+      </Connection>
+    </Databases>
+    <DataSources isList="true" count="1">
+      <ReportChekP Ref="3" type="Stimulsoft.Report.Dictionary.StiSqlSource" isKey="true">
+        <Alias>ReportChekP</Alias>
+        <Columns isList="true" count="6">
+          <value>ShomareHesab,System.Int32</value>
+          <value>Tarikh,System.String</value>
+          <value>SarResid,System.String</value>
+          <value>Mablagh,System.Int32</value>
+          <value>Vaziyat,System.String</value>
+          <value>NameShakhs,System.String</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <Name>ReportChekP</Name>
+        <NameInSource>Connection</NameInSource>
+        <Parameters isList="true" count="2">
+          <value>Tarikh1,strTarikh1,12,50</value>
+          <value>Tarikh2,strTarikh2,12,50</value>
+        </Parameters>
+        <SqlCommand>execute ReportChekP  @Tarikh1 , @Tarikh2</SqlCommand>
+      </ReportChekP>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Variables isList="true" count="2">
+      <value>,strTarikh1,strTarikh1,System.String,,False,False</value>
+      <value>,strTarikh2,strTarikh2,System.String,,False,False</value>
+    </Variables>
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="4" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>White</Brush>
+      <Components isList="true" count="4">
+        <PageHeaderBand1 Ref="5" type="PageHeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0.2,7.49,0.8</ClientRectangle>
+          <Components isList="true" count="14">
+            <Text1 Ref="6" type="Text" isKey="true">
+              <Brush>Moccasin</Brush>
+              <ClientRectangle>0,0,7.5,0.5</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <TextBrush>Black</TextBrush>
+            </Text1>
+            <Text4 Ref="7" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.5,0,2.8,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Yekan,15.75,Bold,Point,False,178</Font>
+              <Guid>7c12343bc1574832bae9ba84ca03147e</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text4</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>گزارش چک های پرداختی</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Wysiwyg</TextQuality>
+            </Text4>
+            <Text5 Ref="8" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>6.7,0.2,0.7,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Yekan,12,Bold,Point,False,178</Font>
+              <Guid>a554338d545a458abbb4d94ee339aa9a</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text5</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>: از تاریخ</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Wysiwyg</TextQuality>
+            </Text5>
+            <Text6 Ref="9" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5.4,0.2,1.3,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Yekan,12,Bold,Point,False,178</Font>
+              <Guid>22b87458094741f48c07958148838ecc</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text6</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>{strTarikh1}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Wysiwyg</TextQuality>
+            </Text6>
+            <Text7 Ref="10" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1.4,0.2,0.7,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Yekan,12,Bold,Point,False,178</Font>
+              <Guid>6505b70d0ec34b52bd43b4ee9abc6e98</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text7</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>: تا تاریخ</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Wysiwyg</TextQuality>
+            </Text7>
+            <Text8 Ref="11" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.1,0.2,1.3,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Yekan,12,Bold,Point,False,178</Font>
+              <Guid>547bba33345b4b59b956693e886b114d</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text8</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>{strTarikh2}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Wysiwyg</TextQuality>
+            </Text8>
+            <Text9 Ref="12" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>7,0.5,0.5,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Yekan,12,Bold,Point,False,178</Font>
+              <Guid>89feeb1d1d164eb89e3daed794946454</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text9</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>ردیف</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Wysiwyg</TextQuality>
+            </Text9>
+            <Text10 Ref="13" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5.4,0.5,1.6,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Yekan,12,Bold,Point,False,178</Font>
+              <Guid>3e6b6ba65efd4ecba30bc1e67ddf3755</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text10</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>شماره حساب</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Wysiwyg</TextQuality>
+            </Text10>
+            <Text11 Ref="14" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.1,0.5,1.3,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Yekan,12,Bold,Point,False,178</Font>
+              <Guid>77afe1aa1c344c0e86a00419503822fc</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text11</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>سررسید</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Wysiwyg</TextQuality>
+            </Text11>
+            <Text12 Ref="15" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.7,0.5,1.4,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Yekan,12,Bold,Point,False,178</Font>
+              <Guid>1e87a23126da40f4ac27a11fb50dce11</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text12</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>مبلغ</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Wysiwyg</TextQuality>
+            </Text12>
+            <Text13 Ref="16" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1.5,0.5,1.2,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Yekan,12,Bold,Point,False,178</Font>
+              <Guid>1d0e8fadbe5c4e55844fedce7c6f7d55</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text13</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>وضعیت</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Wysiwyg</TextQuality>
+            </Text13>
+            <Text14 Ref="17" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.5,1.5,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Yekan,12,Bold,Point,False,178</Font>
+              <Guid>0744511bc9e04aa1b2af52833fbb85dc</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text14</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>در وجه</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Wysiwyg</TextQuality>
+            </Text14>
+            <HorizontalLinePrimitive1 Ref="18" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,0.5,7.5,0.01</ClientRectangle>
+              <Color>Black</Color>
+              <EndCap Ref="19" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Name>HorizontalLinePrimitive1</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Size>2</Size>
+              <StartCap Ref="20" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive1>
+            <HorizontalLinePrimitive2 Ref="21" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,0.8,7.5,0.01</ClientRectangle>
+              <Color>Black</Color>
+              <EndCap Ref="22" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Guid>02bb5b35cc404e4aacde6885dc269237</Guid>
+              <Name>HorizontalLinePrimitive2</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Size>2</Size>
+              <StartCap Ref="23" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive2>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>PageHeaderBand1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+        </PageHeaderBand1>
+        <PageFooterBand1 Ref="24" type="PageFooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,10.61,7.49,0.3</ClientRectangle>
+          <Components isList="true" count="3">
+            <Text21 Ref="25" type="Text" isKey="true">
+              <Brush>Bisque</Brush>
+              <ClientRectangle>0,-0.01,7.5,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text21</Name>
+              <Page isRef="4" />
+              <Parent isRef="24" />
+              <TextBrush>Black</TextBrush>
+            </Text21>
+            <Text19 Ref="26" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.8,-0.01,1.1,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Yekan,12,Bold,Point,False,178</Font>
+              <Guid>40364c3c9a7f453dbd8dd1653d62ace5</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text19</Name>
+              <Page isRef="4" />
+              <Parent isRef="24" />
+              <Text>: شماره صفحه</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Wysiwyg</TextQuality>
+            </Text19>
+            <Text20 Ref="27" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.2,-0.01,0.6,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Yekan,12,Bold,Point,False,178</Font>
+              <Guid>ed1d92c6a9ce4b669463fa7c84fa80b0</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text20</Name>
+              <Page isRef="4" />
+              <Parent isRef="24" />
+              <Text>{PageNumber}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Wysiwyg</TextQuality>
+            </Text20>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>PageFooterBand1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+        </PageFooterBand1>
+        <DataBand1 Ref="28" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,1.4,7.49,0.3</ClientRectangle>
+          <Components isList="true" count="6">
+            <Text3 Ref="29" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.7,0,1.4,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Yekan,12,Bold,Point,False,178</Font>
+              <Guid>2b3bf9c61d2a41b7b3dfe6801e955176</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text3</Name>
+              <Page isRef="4" />
+              <Parent isRef="28" />
+              <Text>{ReportChekP.Mablagh}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="30" type="NumberFormat" isKey="true">
+                <DecimalDigits>0</DecimalDigits>
+                <GroupSeparator>,</GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <UseLocalSetting>False</UseLocalSetting>
+              </TextFormat>
+            </Text3>
+            <Text15 Ref="31" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5.4,0,1.6,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Yekan,12,Bold,Point,False,178</Font>
+              <Guid>ac4ac1c173594e27bac7644980336517</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text15</Name>
+              <Page isRef="4" />
+              <Parent isRef="28" />
+              <Text>{ReportChekP.ShomareHesab}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="32" type="NumberFormat" isKey="true">
+                <DecimalDigits>0</DecimalDigits>
+                <GroupSeparator>,</GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <UseLocalSetting>False</UseLocalSetting>
+              </TextFormat>
+            </Text15>
+            <Text16 Ref="33" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,1.5,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Yekan,12,Bold,Point,False,178</Font>
+              <Guid>d650dff4fe964967bbc82f78e9cdff76</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text16</Name>
+              <Page isRef="4" />
+              <Parent isRef="28" />
+              <Text>{ReportChekP.NameShakhs}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Wysiwyg</TextQuality>
+            </Text16>
+            <Text17 Ref="34" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1.5,0,1.2,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Yekan,12,Bold,Point,False,178</Font>
+              <Guid>f88150a73ef146e2af94707dd1fc3504</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text17</Name>
+              <Page isRef="4" />
+              <Parent isRef="28" />
+              <Text>{ReportChekP.Vaziyat}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Wysiwyg</TextQuality>
+            </Text17>
+            <Text2 Ref="35" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.1,0,1.3,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Yekan,12,Bold,Point,False,178</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text2</Name>
+              <Page isRef="4" />
+              <Parent isRef="28" />
+              <Text>{ReportChekP.SarResid}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Wysiwyg</TextQuality>
+            </Text2>
+            <Text18 Ref="36" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>7,0,0.5,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Yekan,12,Bold,Point,False,178</Font>
+              <Guid>a22f6f2fae3f4c5985df19000d4a65bd</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text18</Name>
+              <Page isRef="4" />
+              <Parent isRef="28" />
+              <Text>{Line}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Wysiwyg</TextQuality>
+            </Text18>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>ReportChekP</DataSourceName>
+          <Filters isList="true" count="0" />
+          <Name>DataBand1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Sort isList="true" count="0" />
+        </DataBand1>
+        <HorizontalLinePrimitive3 Ref="37" type="HorizontalLinePrimitive" isKey="true">
+          <ClientRectangle>0,10.6,7.5,0.01</ClientRectangle>
+          <Color>Black</Color>
+          <EndCap Ref="38" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </EndCap>
+          <Guid>f9b5f191de1548f487729fe66e39600f</Guid>
+          <Name>HorizontalLinePrimitive3</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Size>2</Size>
+          <StartCap Ref="39" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </StartCap>
+        </HorizontalLinePrimitive3>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>1b835f6acefe40e7b01c92513643aad1</Guid>
+      <Margins>0.39,0.39,0.39,0.39</Margins>
+      <Name>Page1</Name>
+      <PageHeight>11.69</PageHeight>
+      <PageWidth>8.27</PageWidth>
+      <PaperSize>A4</PaperSize>
+      <Report isRef="0" />
+      <Watermark Ref="40" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+  </Pages>
+  <PrinterSettings Ref="41" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>10/14/2016 7:30:15 PM</ReportChanged>
+  <ReportCreated>10/14/2016 6:01:15 PM</ReportCreated>
+  <ReportFile>D:\Hoteldari\Hoteldari\Hoteldari\bin\Debug\Report\rptChekP.mrt</ReportFile>
+  <ReportGuid>9692bf29809c407a9239e5de6c5ffced</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Inches</ReportUnit>
+  <ReportVersion>2010.1.700</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        
+        public Report()
+        {
+            this.InitializeComponent();
+        }
+        #region StiReport Designer generated code - do not modify#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>

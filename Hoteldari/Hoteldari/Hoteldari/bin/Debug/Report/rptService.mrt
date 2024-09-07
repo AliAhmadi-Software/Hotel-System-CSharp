@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.0" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="1">
+      <Connection Ref="2" type="Stimulsoft.Report.Dictionary.StiSqlDatabase" isKey="true">
+        <Alias>Connection</Alias>
+        <ConnectionString>Data Source=.;Integrated Security=True;Initial Catalog=Hoteldari</ConnectionString>
+        <Name>Connection</Name>
+        <PromptUserNameAndPassword>False</PromptUserNameAndPassword>
+      </Connection>
+    </Databases>
+    <DataSources isList="true" count="1">
+      <ReportService Ref="3" type="Stimulsoft.Report.Dictionary.StiSqlSource" isKey="true">
+        <Alias>ReportService</Alias>
+        <Columns isList="true" count="2">
+          <value>NameService,System.String</value>
+          <value>Mablagh,System.Int32</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <Name>ReportService</Name>
+        <NameInSource>Connection</NameInSource>
+        <Parameters isList="true" count="0" />
+        <SqlCommand>execute ReportService</SqlCommand>
+      </ReportService>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Variables isList="true" count="0" />
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="4" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="3">
+        <PageHeaderBand1 Ref="5" type="PageHeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0.2,5.05,0.7</ClientRectangle>
+          <Components isList="true" count="7">
+            <Text3 Ref="6" type="Text" isKey="true">
+              <Brush>LightGray</Brush>
+              <ClientRectangle>0,0,5.1,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Yekan,12,Bold,Point,False,178</Font>
+              <Guid>dda43732bfd94fe888995e4a1d96fa3d</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text3</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Wysiwyg</TextQuality>
+            </Text3>
+            <Text4 Ref="7" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1.2,0,2.4,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Yekan,12,Bold,Point,False,178</Font>
+              <Guid>808fda5771164db892c9be51da0efaeb</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text4</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>گزارش لیست سرویس ها و خدمات</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Wysiwyg</TextQuality>
+            </Text4>
+            <Text5 Ref="8" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.3,0.4,0.7,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Yekan,12,Bold,Point,False,178</Font>
+              <Guid>d3d4d8de2c0b4f778b1663025d3d275e</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text5</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>ردیف</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Wysiwyg</TextQuality>
+            </Text5>
+            <Text6 Ref="9" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1.8,0.4,2.3,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Yekan,12,Bold,Point,False,178</Font>
+              <Guid>a151472daf3c4e57bb5214408fdd316a</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text6</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>نام سرویس</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Wysiwyg</TextQuality>
+            </Text6>
+            <Text2 Ref="10" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.2,0.4,1.2,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Yekan,12,Bold,Point,False,178</Font>
+              <Guid>e747e5089b9241fead65424b3fb5a432</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text2</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>قیمت سرویس</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Wysiwyg</TextQuality>
+            </Text2>
+            <HorizontalLinePrimitive1 Ref="11" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,0.7,5,0.01</ClientRectangle>
+              <Color>Black</Color>
+              <EndCap Ref="12" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Name>HorizontalLinePrimitive1</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Size>2</Size>
+              <StartCap Ref="13" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive1>
+            <HorizontalLinePrimitive2 Ref="14" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,0.4,5,0.01</ClientRectangle>
+              <Color>Black</Color>
+              <EndCap Ref="15" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Guid>9a662edcc9504ec3b92373581b53ca6f</Guid>
+              <Name>HorizontalLinePrimitive2</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Size>2</Size>
+              <StartCap Ref="16" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive2>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>PageHeaderBand1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+        </PageHeaderBand1>
+        <PageFooterBand1 Ref="17" type="PageFooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,7.19,5.05,0.3</ClientRectangle>
+          <Components isList="true" count="0" />
+          <Conditions isList="true" count="0" />
+          <Name>PageFooterBand1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+        </PageFooterBand1>
+        <DataBand1 Ref="18" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,1.3,5.05,0.3</ClientRectangle>
+          <Components isList="true" count="3">
+            <Text1 Ref="19" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.3,0,0.7,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Yekan,12,Bold,Point,False,178</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="4" />
+              <Parent isRef="18" />
+              <Text>{Line}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Wysiwyg</TextQuality>
+            </Text1>
+            <Text8 Ref="20" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1.8,0,2.3,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Yekan,12,Bold,Point,False,178</Font>
+              <Guid>afd42de1968a42aa9091889aca1b3918</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text8</Name>
+              <Page isRef="4" />
+              <Parent isRef="18" />
+              <Text>{ReportService.NameService}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Wysiwyg</TextQuality>
+            </Text8>
+            <Text7 Ref="21" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.1,0,1.2,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Yekan,12,Bold,Point,False,178</Font>
+              <Guid>48223655476b47de83b6b48dadf75a2e</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text7</Name>
+              <Page isRef="4" />
+              <Parent isRef="18" />
+              <Text>{ReportService.Mablagh}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="22" type="NumberFormat" isKey="true">
+                <DecimalDigits>0</DecimalDigits>
+                <GroupSeparator>,</GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <UseLocalSetting>False</UseLocalSetting>
+              </TextFormat>
+            </Text7>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>ReportService</DataSourceName>
+          <Filters isList="true" count="0" />
+          <Name>DataBand1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Sort isList="true" count="0" />
+        </DataBand1>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>608f19cbd71943a1862fe659b3607935</Guid>
+      <Margins>0.39,0.39,0.39,0.39</Margins>
+      <Name>Page1</Name>
+      <PageHeight>8.27</PageHeight>
+      <PageWidth>5.83</PageWidth>
+      <PaperSize>A5</PaperSize>
+      <Report isRef="0" />
+      <Watermark Ref="23" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+  </Pages>
+  <PrinterSettings Ref="24" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>10/10/2016 10:06:15 PM</ReportChanged>
+  <ReportCreated>10/10/2016 9:55:02 PM</ReportCreated>
+  <ReportFile>D:\Hoteldari\Hoteldari\Hoteldari\bin\Debug\Report\rptService.mrt</ReportFile>
+  <ReportGuid>c4aff717645c48298b63029b2b7fda16</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Inches</ReportUnit>
+  <ReportVersion>2010.1.700</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        
+        public Report()
+        {
+            this.InitializeComponent();
+        }
+        #region StiReport Designer generated code - do not modify#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>
